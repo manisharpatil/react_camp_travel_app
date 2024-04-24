@@ -1,10 +1,10 @@
-import Image from "next/image";
-
 import React from 'react'
 
 const Home = () => {
   return (
-    <div>page</div>
+    <h1 className="text-bold text-teal-500 text-2xl">
+      Hello World
+    </h1>
   )
 }
 
