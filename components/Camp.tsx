@@ -37,13 +37,14 @@ const Campsite = ({
         <div className="flexCenter gap-6">
           <span className="flex -space-x-4 overflow-hidden">
             {PEOPLE_URL.map((url) => (
-              <Image 
-              className="inline-block h-10 w-10 rounded-full"
-              src={url}
-              key={url}
-              alt="person"
-              width={52}
-              height={52} />
+              <Image
+                className="inline-block h-10 w-10 rounded-full"
+                src={url}
+                key={url}
+                alt="person"
+                width={52}
+                height={52}
+              />
             ))}
           </span>
           <p className="bold-16 md:bold-20 text-white">{peopleJoined}</p>
@@ -75,6 +76,13 @@ const Camp = () => {
           subtitle="Somewhere in the wilderness"
           peopleJoined="50+ Joined"
         />
+      </div>
+
+      <div className="flexEnd mt-10 px-6 lg:-mt-60 lg:mr-6 ">
+        <div
+          className="bg-green-50 p-8 lg:max-w-[500px] xl:max-w-[734px]
+         xl:rounded-5xl xl:px-16 xl:py-20 relative w-full overflow-hidden rounded-3xl "
+        ></div>
       </div>
     </section>
   );
